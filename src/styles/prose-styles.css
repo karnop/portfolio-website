@@ -1,0 +1,60 @@
+.prose-custom {
+  font-family: "Lora", serif;
+  color: #333333; /* charcoal */
+  line-height: 1.7;
+  max-width: 75ch; /* Optimal reading width */
+}
+
+.prose-custom h2,
+.prose-custom h3,
+.prose-custom h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #333333;
+}
+
+.prose-custom p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.prose-custom a {
+  color: #706c61; /* brand-sepia */
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.prose-custom a:hover {
+  color: #333333;
+}
+
+.prose-custom blockquote {
+  border-left-width: 2px;
+  border-left-color: #e5e7eb; /* neutral-200 */
+  color: #706c61;
+  font-style: italic;
+  padding-left: 1em;
+  margin-left: 0;
+}
+
+.prose-custom pre {
+  background-color: #f3f4f6; /* neutral-100 */
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-family: '"IBM Plex Mono"', monospace;
+  white-space: pre-wrap;
+}
+
+.prose-custom code {
+  font-family: '"IBM Plex Mono"', monospace;
+  background-color: #f3f4f6;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+}
+
+.prose-custom pre code {
+  background-color: transparent;
+  padding: 0;
+}
