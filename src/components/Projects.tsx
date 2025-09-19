@@ -15,7 +15,7 @@ export default function Projects() {
             Selected Works
           </h2>
           <p className="mt-4 text-neutral-600">
-            A collection of projects where I've architected and developed
+            A collection of projects where I&apos;ve architected and developed
             solutions across AI, web, and software engineering.
           </p>
         </AnimateOnScroll>

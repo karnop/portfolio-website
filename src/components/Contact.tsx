@@ -12,7 +12,7 @@ export default function Contact() {
           Get In Touch
         </h2>
         <p className="mt-6 text-neutral-600 max-w-lg mx-auto">
-          I'm always open to discussing new projects, creative ideas, or
+          I&apos;m always open to discussing new projects, creative ideas, or
           opportunities to be part of an ambitious vision. Feel free to reach
           out.
         </p>

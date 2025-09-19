@@ -1,30 +1,6 @@
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import AnimateOnScroll from "./AnimateOnScroll";
-import dbConnect from "@/lib/mongodb";
-import BlogPost, { IBlogPost } from "@/models/blogPost";
-
-// This function now fetches data directly from the database on the server
-async function getPosts(): Promise<Partial<IBlogPost>[]> {
-  await dbConnect();
-  const posts = await BlogPost.find({}).sort({ createdAt: -1 }).lean();
-
-  return posts.map((post) => ({
-    _id: post._id.toString(),
-    slug: post.slug,
-    title: post.title,
-    excerpt: post.excerpt,
-    createdAt: new Date(post.createdAt).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    }),
-  }));
-}
 
 export default async function Blog() {
-  const blogPosts = await getPosts();
-
   return (
     <section id="blog" className="py-20 md:py-32 bg-cream">
       <div className="max-w-4xl mx-auto px-6">
